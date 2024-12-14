@@ -1,9 +1,16 @@
 def power(base, exponent):
+    if exponent < 0:
+        base = 1 / base 
+        exponent = -exponent 
+
     result = 1
     for _ in range(exponent):
-        result *= base
+        result *= base 
+
     return result
 
-# Пример использования
-result = power(2, 3)  # 2 в степени 3
-print(result)  # Вывод: 8
+print(power(2, 3))   #Вывод: 8
+print(power(-2, 3))  #Вывод: -8
+print(power(-2, 2))  #Вывод: 4
+print(power(2, -3))  #Вывод: 0.125
+print(power(-2, -3)) #Вывод: -0.125
