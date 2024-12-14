@@ -13,4 +13,3 @@ print(power(2, 3))   #Вывод: 8
 print(power(-2, 3))  #Вывод: -8
 print(power(-2, 2))  #Вывод: 4
 print(power(2, -3))  #Вывод: 0.125
-print(power(-2, -3)) #Вывод: -0.125
